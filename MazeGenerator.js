@@ -1,6 +1,4 @@
-console.log('Massukkan Ukuran Maze')
-process.stdin.once('data', (takeInput) => {
-    let S = parseInt(takeInput)
+    let S = 15
     let n = S*S-1
     let posisi = [0, 1]
     let m = 0
@@ -48,4 +46,22 @@ process.stdin.once('data', (takeInput) => {
         text.push(line.join('')+'\r\n')
     }
     return console.log(text.join(''));
-})
+
+/* result
+
+@ @@@@@@@@@@@@@
+@ @           @
+@ @ @@@@@@@@@ @
+@ @ @       @ @
+@ @ @ @@@@@ @ @
+@ @ @ @   @ @ @
+@ @ @ @ @ @ @ @
+@ @ @ @ @ @ @ @
+@ @ @ @@@ @ @ @
+@ @ @     @ @ @
+@ @ @@@@@@@ @ @
+@ @         @ @
+@ @@@@@@@@@@@ @
+@             @
+@@@@@@@@@@@@@@@
+*/
